@@ -1,0 +1,66 @@
+.sec1{
+    background-image: url('/images/bg-image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(4, 96, 182);
+    background-blend-mode: soft-light;
+    width: 32em;
+    height: 25em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-indent: 1em;
+    
+    
+    ul{
+        color: white;
+        padding: 1em;
+        max-width: 800px;
+        text-align: left;
+        font-size: large;  
+    }
+    li{
+        padding-top: 1em;
+    }
+   
+}
+
+form{
+    background-color: white;
+    border: solid 1px;
+    width: 32em;
+    height: 30em;
+    margin: auto;
+    legend{
+        font-size: 3em;
+        margin-top: 1em;
+    }
+    fieldset{
+        border: none;
+        img{
+            height: 20px;
+            width: 20px;
+            opacity: .5;
+        }
+    }
+    input{
+        width: 80%;
+        padding-bottom: 1em;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+    }
+    button{
+        @include btn;
+    }
+
+}
+
+footer{
+    p{
+        color: white;
+    }
+    span{
+        color: rgb(4, 96, 182);
+    }
+}

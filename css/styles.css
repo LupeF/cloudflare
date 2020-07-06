@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #3a3838;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.sec1 {
+  background-image: url("/images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0460b6;
+  background-blend-mode: soft-light;
+  width: 32em;
+  height: 25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-indent: 1em;
+}
+.sec1 ul {
+  color: white;
+  padding: 1em;
+  max-width: 800px;
+  text-align: left;
+  font-size: large;
+}
+.sec1 li {
+  padding-top: 1em;
+}
+
+form {
+  background-color: white;
+  border: solid 1px;
+  width: 32em;
+  height: 30em;
+  margin: auto;
+}
+form legend {
+  font-size: 3em;
+  margin-top: 1em;
+}
+form fieldset {
+  border: none;
+}
+form fieldset img {
+  height: 20px;
+  width: 20px;
+  opacity: 0.5;
+}
+form input {
+  width: 80%;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+form button {
+  border-radius: 25px;
+  width: 100px;
+  height: 25px;
+  background-color: #0460b6;
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+footer span {
+  color: #0460b6;
+}
+
+nav {
+  width: 90%;
+}
+nav li {
+  list-style-type: none;
+  padding: 0.5em;
+}
+nav button {
+  border-radius: 25px;
+  width: 100px;
+  height: 25px;
+  background-color: #0460b6;
+  color: white;
+  align-self: center;
+}
+nav a {
+  display: block;
+}
+
+/*# sourceMappingURL=styles.css.map */
