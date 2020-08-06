@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -14,9 +14,21 @@ a{
 
 .container{
     text-align: center;
-    width: 90%;
-    max-width: 500px;
-    margin: auto;
+    // width: 90%;
     
+    min-width: 320px;
+    margin: auto;
+    @media(min-width: 600px){
+        width: 90%;
+        // max-width: 500px;
+    }
 }
+
+// @media(min-width:500px){
+//     .flex{
+//         display: flex
+//     }
+
+    
+// }
 
