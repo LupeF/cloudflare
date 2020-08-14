@@ -337,11 +337,11 @@ template {
 
 * {
   box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
 }
 
 body {
-  background-color: #3a3838;
+  background-color: #3f3f3f;
 }
 
 a {
@@ -351,27 +351,32 @@ a {
 
 .container {
   text-align: center;
+  width: 90%;
   min-width: 320px;
   margin: auto;
 }
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .container {
-    width: 90%;
+    margin-top: 1em;
   }
 }
 
+@media (min-width: 500px) {
+  .flex {
+    display: row;
+  }
+}
 .sec1 {
   background-image: url("../images/bg-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #0460b6;
   background-blend-mode: soft-light;
-  width: fit-content;
   height: 366px;
   margin: auto;
   color: white;
 }
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   .sec1 {
     width: 365px;
   }
@@ -406,11 +411,10 @@ a {
 form {
   background-color: white;
   border: solid 1px;
-  width: fit-content;
   margin: auto;
   height: 365px;
 }
-@media (min-width: 550px) {
+@media (min-width: 500px) {
   form {
     width: 365px;
   }
@@ -424,6 +428,12 @@ form {
 form legend {
   font-size: 1.5em;
   margin-top: 1em;
+}
+@media (min-width: 768px) {
+  form legend {
+    text-align: left;
+    padding-left: 2em;
+  }
 }
 form button {
   margin-bottom: 0.5em;
@@ -464,7 +474,16 @@ form button {
   color: white;
   border: none;
 }
+form .social {
+  display: flex;
+  justify-content: space-around;
+}
 
+@media (min-width: 768px) {
+  footer {
+    padding-top: 2em;
+  }
+}
 footer p {
   color: white;
 }
@@ -484,21 +503,27 @@ footer span {
 nav {
   width: 90%;
   margin: 0 auto 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4em;
+  }
 }
 nav ul {
   width: 100%;
   padding: 0;
 }
-@media (min-width: 625px) {
+@media (min-width: 768px) {
   nav ul {
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
 }
 nav li {
+  justify-content: space-between;
   list-style-type: none;
   padding: 0.5em;
 }
@@ -517,7 +542,7 @@ nav button {
   margin-bottom: 2em;
   display: none;
 }
-@media (min-width: 630px) {
+@media (min-width: 768px) {
   nav button {
     display: inline-block;
     margin-top: 2em;
@@ -530,6 +555,11 @@ nav a {
 nav .logo {
   color: white;
   font-size: larger;
+}
+@media (min-width: 768px) {
+  nav .logo {
+    padding-right: 25px;
+  }
 }
 nav span {
   font-family: cursive;

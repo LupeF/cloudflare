@@ -4,13 +4,10 @@
     background-size: cover;
     background-color: rgb(4, 96, 182);
     background-blend-mode: soft-light;
-    width: fit-content;
-    // height: max-content;
-    // width: 254px;
     height: 366px;
     margin: auto;
     color: white;
-    @media(min-width:550px){
+    @media(min-width:500px){
         width: 365px;
     }
 
@@ -27,7 +24,6 @@
     
     ul {
         padding: 1em;
-        // max-width: 800px;
         width: 90%;
         text-align: left;
         font-size: small; 
@@ -47,12 +43,9 @@
 form{
     background-color: white;
     border: solid 1px;
-    width: fit-content;
-    // height: max-content;
     margin: auto; 
     height: 365px;
-    // width: 415px;
-    @media(min-width:550px){
+    @media(min-width:500px){
         width: 365px;
     }
     @media(min-width:768px){
@@ -62,7 +55,10 @@ form{
     legend{
         font-size: 1.5em;
         margin-top: 1em;
-        // margin-right: auto;
+        @media(min-width: 768px){
+            text-align: left;
+            padding-left: 2em;
+        }
     }
 
     button{
@@ -85,6 +81,7 @@ form{
             width: 90%;
         }
     }
+
     input {
         width: 80%;
         margin-bottom: 1em;
@@ -102,9 +99,16 @@ form{
         @include btn;
     }
 
+    .social{
+        display: flex;
+        justify-content: space-around;
+    }
  }
 
 footer{
+    @media(min-width:768px){
+        padding-top: 2em;
+    }
     p{
         color: white;
     }
@@ -121,3 +125,4 @@ footer{
         margin: auto;
     }
 }
+
