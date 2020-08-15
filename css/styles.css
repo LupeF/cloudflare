@@ -406,6 +406,7 @@ a {
 }
 .sec1 li {
   padding-top: 1em;
+  font-size: larger;
 }
 
 form {
@@ -457,14 +458,14 @@ form input {
   width: 80%;
   margin-bottom: 1em;
   border: none;
-  border-bottom: solid 3px;
+  border-bottom: solid 3px gray;
   outline: none;
   caret-color: black;
   font-family: cursive;
   font-size: larger;
 }
 form input:focus {
-  color: skyblue;
+  border-color: #0460b6;
 }
 form button {
   border-radius: 25px;
@@ -498,6 +499,15 @@ footer span {
     max-width: max-content;
     margin: auto;
   }
+}
+
+.heading {
+  display: flex;
+  background: white;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  font-size: larger;
 }
 
 nav {

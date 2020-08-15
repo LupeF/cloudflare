@@ -1,3 +1,11 @@
+.heading{
+    display: flex;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-size: larger;
+}
 
 nav{
     width: 90%;
@@ -8,6 +16,7 @@ nav{
         align-items: center;
         margin-bottom: 4em;
     }
+    
 
     ul{
         width: 100%;

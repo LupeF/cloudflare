@@ -36,6 +36,7 @@
 
     li{
         padding-top: 1em;
+        font-size: larger;
     }
 
 }
@@ -86,14 +87,15 @@ form{
         width: 80%;
         margin-bottom: 1em;
         border: none;
-        border-bottom:solid 3px ;
+        border-bottom:solid 3px gray;
         outline: none;
         caret-color: black;  
         font-family: cursive; 
         font-size: larger;
         &:focus{
-            color: skyblue;
-    }
+            border-color:  rgb(4, 96, 182);
+        }
+       
     }
     button{
         @include btn;
