@@ -1,8 +1,9 @@
-//Slider Effect
 $('header')
 .addClass('heading')
-.text('Sign up, and recieve 10% off!')
-.slideDown()
-.delay(2500)
-.slideUp();
-
+// .css('backgroundColor', 'white' )
+// .css('height', '50px')
+// .css('margin', 'auto')
+.fadeIn()
+.html('Hello')
+.delay(2000)
+.fadeOut();

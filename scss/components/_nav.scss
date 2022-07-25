@@ -1,70 +1,70 @@
-.heading{
-    display: flex;
-    background: white;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    font-size: larger;
-}
+// .heading{
+//     display: flex;
+//     background: white;
+//     justify-content: center;
+//     align-items: center;
+//     height: 70px;
+//     font-size: larger;
+// }
 
-nav{
-    width: 90%;
-    margin: 0 auto 2em;
-    @media(min-width:768px){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 4em;
-    }
+// nav{
+//     width: 90%;
+//     margin: 0 auto 2em;
+//     @media(min-width:768px){
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin-bottom: 4em;
+//     }
     
 
-    ul{
-        width: 100%;
-        padding: 0; 
-        @media(min-width: 768px){
-            display: flex;
-            justify-content: center;
-        }
-    }
+//     ul{
+//         width: 100%;
+//         padding: 0; 
+//         @media(min-width: 768px){
+//             display: flex;
+//             justify-content: center;
+//         }
+//     }
    
-    li{
-        justify-content: space-between;
-        list-style-type: none;
-        padding: .5em; 
-    }
-    img{
-        width: 3em;
-        height: 3em;
-    }
+//     li{
+//         justify-content: space-between;
+//         list-style-type: none;
+//         padding: .5em; 
+//     }
+//     img{
+//         width: 3em;
+//         height: 3em;
+//     }
 
-    button{
-        @include btn;
-        margin-left: 3em;
-        margin-bottom: 2em;
-        display: none;
-        @media(min-width: 768px){
-            display: inline-block;
-            margin-top: 2em;
-            margin-right: 1em;
-        }
-    }
+//     button{
+//         @include btn;
+//         margin-left: 3em;
+//         margin-bottom: 2em;
+//         display: none;
+//         @media(min-width: 768px){
+//             display: inline-block;
+//             margin-top: 2em;
+//             margin-right: 1em;
+//         }
+//     }
 
-    a{
-        display: block;
+//     a{
+//         display: block;
         
-    }
-    .logo{
-        color: white;
-        font-size: larger;
-        @media(min-width: 768px){
-            padding-right: 25px;
-        }
+//     }
+//     .logo{
+//         color: white;
+//         font-size: larger;
+//         @media(min-width: 768px){
+//             padding-right: 25px;
+//         }
         
-    }
-    span{
-        font-family: cursive;
-    }
-}
+//     }
+//     span{
+//         font-family: cursive;
+//     }
+// }
 
 
 
