@@ -5,34 +5,6 @@
 
 }
 
-nav{
-    display: none;
-    @media (min-width:768px){
-        display:grid;
-        grid-template-columns: 400px 1fr 350px;
-        align-items: center;
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            svg{
-                margin-bottom: 2em;
-                padding-right: 5px;
-            }
-            
-        }
-        h2,
-        a{
-            color: white;
-            }
-        ul{
-            display: flex;
-            justify-content:space-evenly;
-            list-style-type: none;
-        }
-        
-    }
-}
 
 body{
     background-image: url('../images/bg-image.jpg');
@@ -44,15 +16,18 @@ body{
 
 a{
     text-decoration: none;
+    &:hover{
+        border-bottom: 3px solid white;
+    }
 }
 
 .container{
     text-align: center;
     width: 90%;
-    margin: 5em auto;
+    margin: auto;
     height: 100vh;
     @media(min-width: 768px){
-        margin-top: 1em;
+        margin-top: -8em;
         display: flex;
         justify-content: center;
         align-items: center;

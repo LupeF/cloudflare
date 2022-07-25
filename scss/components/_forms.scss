@@ -13,26 +13,26 @@
         font-family: cursive;
         font-size: larger; 
     }
-
-    
     ul {
         padding: 1em;
         width: 90%;
         text-align: left;
-        font-size: small; 
         display: block;
         margin: auto;
         @media(min-width: 700px){
             width: 80%;
         }
     }
-
     li{
         padding-top: 1em;
         font-size: larger;
     }
+
 .sec1{
-    margin-bottom: 10em;
+    margin-bottom: 1em;
+    p{
+        font-size: x-large;
+    }
 }
 
 .form-container {
@@ -72,7 +72,16 @@
         &:focus{
             border-color:  rgb(8, 121, 227);
         }  
+    }
+    .social svg{
+        height: 40px;
+        padding-top: 1em;
+        margin: 1em;
     } 
+ }
+
+ .instagram{
+    fill: orange;
  }
 
  button{

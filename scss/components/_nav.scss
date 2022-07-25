@@ -1,70 +1,33 @@
-// .heading{
-//     display: flex;
-//     background: white;
-//     justify-content: center;
-//     align-items: center;
-//     height: 70px;
-//     font-size: larger;
-// }
-
-// nav{
-//     width: 90%;
-//     margin: 0 auto 2em;
-//     @media(min-width:768px){
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         margin-bottom: 4em;
-//     }
-    
-
-//     ul{
-//         width: 100%;
-//         padding: 0; 
-//         @media(min-width: 768px){
-//             display: flex;
-//             justify-content: center;
-//         }
-//     }
-   
-//     li{
-//         justify-content: space-between;
-//         list-style-type: none;
-//         padding: .5em; 
-//     }
-//     img{
-//         width: 3em;
-//         height: 3em;
-//     }
-
-//     button{
-//         @include btn;
-//         margin-left: 3em;
-//         margin-bottom: 2em;
-//         display: none;
-//         @media(min-width: 768px){
-//             display: inline-block;
-//             margin-top: 2em;
-//             margin-right: 1em;
-//         }
-//     }
-
-//     a{
-//         display: block;
-        
-//     }
-//     .logo{
-//         color: white;
-//         font-size: larger;
-//         @media(min-width: 768px){
-//             padding-right: 25px;
-//         }
-        
-//     }
-//     span{
-//         font-family: cursive;
-//     }
-// }
+nav{
+    display: none;
+    @media (min-width:768px){
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 3em 0;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                margin-bottom: 2em;
+                padding-right: 5px;
+            }   
+        }
+        h2,
+        a{
+            color: white;
+            }
+        ul{
+            display: flex;
+            justify-content:center;
+            list-style-type: none;
+            li{
+                padding-left: 5em;
+            }
+        }
+    }
+}
 
 
 
