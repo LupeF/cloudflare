@@ -10,14 +10,18 @@ nav{
             align-items: center;
             justify-content: center;
             svg{
-                margin-bottom: 2em;
                 padding-right: 5px;
             }   
         }
         h2,
-        a{
+        a {
+            text-decoration: none;
             color: white;
-            }
+        }&:hover{
+            border-bottom: 3px solid white;
+        }
+            
+            
         ul{
             display: flex;
             justify-content:center;

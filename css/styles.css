@@ -348,13 +348,6 @@ body {
   background-blend-mode: soft-light;
 }
 
-a {
-  text-decoration: none;
-}
-a:hover {
-  border-bottom: 3px solid white;
-}
-
 .container {
   text-align: center;
   width: 90%;
@@ -368,10 +361,6 @@ a:hover {
     justify-content: center;
     align-items: center;
   }
-}
-
-svg {
-  margin-top: 2em;
 }
 
 p,
@@ -403,18 +392,26 @@ li {
 }
 
 .sec1 {
-  margin-bottom: 1em;
+  margin: 3em;
 }
 .sec1 p {
-  font-size: x-large;
+  display: none;
+}
+@media (min-width: 768) {
+  .sec1 p {
+    display: contents;
+  }
+}
+@media (min-width: 768px) {
+  .sec1 {
+    margin-bottom: 2em;
+  }
 }
 
 .form-container {
   background-color: white;
   border: solid 1px;
-  margin: auto;
   height: 365px;
-  text-align: center;
 }
 @media (min-width: 768px) {
   .form-container {
@@ -450,14 +447,10 @@ li {
 .form-container input:focus {
   border-color: #0879e3;
 }
-.form-container .social svg {
-  height: 40px;
-  padding-top: 1em;
-  margin: 1em;
-}
 
-.instagram {
-  fill: orange;
+.spacing-header {
+  color: white;
+  text-align: center;
 }
 
 button {
@@ -469,6 +462,9 @@ button {
   border: none;
 }
 
+footer {
+  text-align: center;
+}
 @media (min-width: 768px) {
   footer {
     padding-top: 2em;
@@ -491,12 +487,15 @@ nav {
     justify-content: center;
   }
   nav div svg {
-    margin-bottom: 2em;
     padding-right: 5px;
   }
   nav h2,
 nav a {
+    text-decoration: none;
     color: white;
+  }
+  nav:hover {
+    border-bottom: 3px solid white;
   }
   nav ul {
     display: flex;
@@ -506,6 +505,19 @@ nav a {
   nav ul li {
     padding-left: 5em;
   }
+}
+
+.sec-2 {
+  background-color: white;
+  padding-top: 0.5em;
+}
+.sec-2 .social svg, .sec-2 img {
+  padding-top: 1em;
+  margin: 5em auto;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

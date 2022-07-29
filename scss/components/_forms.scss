@@ -1,9 +1,4 @@
 
-    svg{
-        margin-top: 2em;
-        
-    }
-
     p,
     ul{
         color: white;
@@ -29,18 +24,24 @@
     }
 
 .sec1{
-    margin-bottom: 1em;
+    margin: 3em;
     p{
-        font-size: x-large;
+        display: none;
+        @media(min-width:768){
+            display: contents;
+        }
+    }
+    
+    @media(min-width:768px){
+        margin-bottom: 2em;
     }
 }
 
 .form-container {
     background-color: white;
     border: solid 1px;
-    margin: auto; 
+    // margin: auto; 
     height: 365px;
-    text-align: center;
     @media(min-width:768px){
         height: 365px;
         width: 415px;
@@ -73,22 +74,18 @@
             border-color:  rgb(8, 121, 227);
         }  
     }
-    .social svg{
-        height: 40px;
-        padding-top: 1em;
-        margin: 1em;
-    } 
  }
 
- .instagram{
-    fill: orange;
+ .spacing-header{
+    color: white;
+    text-align: center
  }
-
  button{
     @include btn;
 }
 
 footer{
+    text-align: center;
     @media(min-width:768px){
         padding-top: 2em;
     }

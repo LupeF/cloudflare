@@ -2,10 +2,7 @@
     box-sizing: border-box;
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: 'PT Sans Narrow', sans-serif;
-
 }
-
-
 body{
     background-image: url('../images/bg-image.jpg');
     background-repeat: no-repeat;
@@ -13,14 +10,6 @@ body{
     background-color: rgb(4, 96, 182);
     background-blend-mode: soft-light;
 }
-
-a{
-    text-decoration: none;
-    &:hover{
-        border-bottom: 3px solid white;
-    }
-}
-
 .container{
     text-align: center;
     width: 90%;
