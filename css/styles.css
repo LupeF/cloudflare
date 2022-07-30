@@ -335,34 +335,6 @@ template {
   display: none;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "PT Sans Narrow", sans-serif;
-}
-
-body {
-  background-image: url("../images/bg-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #0460b6;
-  background-blend-mode: soft-light;
-}
-
-.container {
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  height: 100vh;
-}
-@media (min-width: 768px) {
-  .container {
-    margin-top: -8em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
 p,
 ul {
   color: white;
@@ -391,20 +363,55 @@ li {
   font-size: larger;
 }
 
+* {
+  box-sizing: border-box;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+body {
+  background-image: url("../images/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #0460b6;
+  background-blend-mode: soft-light;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .sec1 {
   margin: 3em;
 }
-.sec1 p {
-  display: none;
-}
-@media (min-width: 768) {
-  .sec1 p {
-    display: contents;
-  }
-}
 @media (min-width: 768px) {
   .sec1 {
-    margin-bottom: 2em;
+    padding-bottom: 5rem;
+  }
+}
+.sec1 .logo-Div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec1 .logo-Div p {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sec1 .logo-Div p {
+    display: block;
+    margin-left: 0.5rem;
+    font-size: x-large;
   }
 }
 
@@ -480,6 +487,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     padding: 0 3em 0;
+    margin-top: 1em;
+    min-width: 800px;
   }
   nav div {
     display: flex;
@@ -494,7 +503,8 @@ nav a {
     text-decoration: none;
     color: white;
   }
-  nav:hover {
+  nav h2:hover,
+nav a:hover {
     border-bottom: 3px solid white;
   }
   nav ul {
@@ -511,13 +521,24 @@ nav a {
   background-color: white;
   padding-top: 0.5em;
 }
+.sec-2 .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .sec-2 .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  }
+}
 .sec-2 .social svg, .sec-2 img {
   padding-top: 1em;
   margin: 5em auto;
   height: 100px;
   width: 100px;
-  display: flex;
-  justify-content: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

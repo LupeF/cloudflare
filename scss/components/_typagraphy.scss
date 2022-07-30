@@ -1,2 +1,23 @@
+p,
+ul{
+    color: white;
+}
 
-
+span {
+    font-family: cursive;
+    font-size: larger; 
+}
+ul {
+    padding: 1em;
+    width: 90%;
+    text-align: left;
+    display: block;
+    margin: auto;
+    @media(min-width: 700px){
+        width: 80%;
+    }
+}
+li{
+    padding-top: 1em;
+    font-size: larger;
+}
