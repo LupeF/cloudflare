@@ -1,5 +1,54 @@
 nav{
-    display: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0;
+    .logo-div{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        h2{
+            font-size: initial;
+            padding-left: 5px;
+            color: white;
+        }
+    }
+    ul, button{
+        display: none;
+    }
+    .mobile-btn {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (min-width:768px){
+            display: none;
+        }
+        .mobile-burger{
+            width: 25px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: white;
+            cursor: pointer;
+            &::before,
+            &::after{
+                content: "";
+                position: absolute;
+                height: 5px;
+                width: 25px;
+                background-color: white;
+                border-radius: 5px;
+            }
+            &::before{
+                transform: translateY(-10px);
+            }
+            &::after{
+                transform: translateY(10px);
+            }
+        }
+    }
     @media (min-width:768px){
         display: flex;
         justify-content: space-around;
@@ -23,8 +72,6 @@ nav{
                 border-bottom: 3px solid white;
             }
         }
-            
-            
         ul{
             display: flex;
             justify-content:center;
@@ -33,8 +80,11 @@ nav{
                 padding-left: 5em;
             }
         }
+        button {
+            display: block
+        }
     }
-}
+};
 
 
 

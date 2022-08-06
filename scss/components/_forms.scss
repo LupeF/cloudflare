@@ -3,20 +3,17 @@
     @media(min-width:768px){
         padding-bottom: 5rem;
     }
-    .logo-Div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        p{
-            display: none;
-            @media(min-width:768px){
-                display: block;
-                margin-left: .5rem;
-                font-size: x-large; 
-            }
+    .logo-Div, p{
+        display: none;
+        @media(min-width:768px){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: .5rem;
+            font-size: x-large; 
         }
     }
-}
+};
 
 .form-container {
     background-color: white;
